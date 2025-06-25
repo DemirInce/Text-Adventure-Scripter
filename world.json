@@ -1,0 +1,33 @@
+{
+    "locations": [
+        {
+            "name": "living room",
+            "entrypoint": true,
+            "neighbours": [
+                "kitchen",
+                "garage"
+            ]
+        },
+        {
+            "name": "kitchen",
+            "neighbours": [
+                "living room",
+                "bedroom"
+            ]
+        },
+        {
+            "name": "bedroom",
+            "neighbours": [
+                "kitchen",
+                "garage"
+            ]
+        },
+        {
+            "name": "garage",
+            "neighbours": [
+                "bedroom",
+                "living room"
+            ]
+        }
+    ]
+}
