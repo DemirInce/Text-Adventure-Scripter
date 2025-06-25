@@ -40,6 +40,7 @@ def game_loop():
 
         try:
             handle_input()
+        except(SystemExit): raise
         except:
             print("You can't do that.")
 
