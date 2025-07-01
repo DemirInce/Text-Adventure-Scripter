@@ -1,3 +1,5 @@
+#!./venv/bin/python3
+
 from parsing import Command
 from build_world import World
 from player import Player
