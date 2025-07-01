@@ -28,7 +28,7 @@ def handle_take(c: Command):
         player.take(item_tuple[0])
         print(f"you took the {c.subject}.")
 
-        if player.position.name == [item_tuple[1]]:
+        if player.position.name == item_tuple[1]:
             player.position.items.pop(c.subject, None)
         elif item_tuple[1] in player.position.containers.keys():
             player.position.containers[item_tuple[1]].contents.pop(c.subject, None)
@@ -86,7 +86,7 @@ def main():
     scope = update_scope()
 
     actions = list(command_handlers.keys())
-    print(f"Actions: {', '.join(actions[:-1])}, and {actions[-1]}. \n")
+    print(f"Actions: {', '.join(actions)}, and exit. \n")
 
     game_loop()
 
