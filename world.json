@@ -6,6 +6,9 @@
             "neighbours": [
                 "kitchen",
                 "garage"
+            ],
+            "items": [
+                "remote"
             ]
         },
         {
@@ -13,21 +16,37 @@
             "neighbours": [
                 "living room",
                 "bedroom"
+            ],
+            "items": [
+                "knife"
             ]
         },
         {
             "name": "bedroom",
             "neighbours": [
-                "kitchen",
-                "garage"
+                "kitchen"
+            ],
+            "containers": [
+                {
+                "chest": [
+                    "garage key"
+                ]}
             ]
         },
         {
             "name": "garage",
             "neighbours": [
-                "bedroom",
                 "living room"
             ]
+        }
+    ],
+
+    "gateways": [
+        {
+            "type": "door",
+            "location_1": "living room",
+            "location_2": "garage",
+            "locked": true
         }
     ]
 }

@@ -8,7 +8,7 @@ DIRECTIONS = {
 }
 
 PREPOSITIONS = {
-    "on", "with", "to", "in", "into", "at", "from", "under", "by"
+    "my","on", "with", "to", "in", "into", "at", "from", "under", "by"
 }
 
 FILLER_WORDS = {
@@ -57,5 +57,6 @@ class Command:
         print(f"Raw: {self.raw}\nAction: {self.action}\nSubject: {self.subject}\nPrep: {self.preposition}\nTarget: {self.target}")
 
 if __name__=="__main__": 
-    Command("go to the kitchen").print()
+    while True:
+        Command(input()).print()
 
